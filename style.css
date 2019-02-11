@@ -5,6 +5,10 @@ div i.iconsMid {
     font-size: 2rem;
 }  
 
+.mapaAbajo {
+	margin-top: 20px;
+}
+
 .form-container div, .form-container  span{
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }

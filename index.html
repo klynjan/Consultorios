@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -309,58 +309,53 @@
     <!--contact map-->
 
     <section id="contactMap">
-        <div class="container col-md-12">
-            <div class="row mx-auto">
+        <div class="container col-md-12 my-4">
+            <div class="container row mx-auto">
                 <div class="col-md-6">
+                    <div class="container mb-4 mx-auto">
+                        <img src="img/img_507470.png" alt="contactenos" width="15%" height="15%">
+<span class="ml-4 display-4 align-middle">Contactenos</span>
+                    </div>
                     <form>
-                        <div id="contact-form" class="form-container" data-form-container>
-                            <div class="row">
-                                <div class="form-title">
-                                    <span>Comunicate</span>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Telefono">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <select class="custom-select" required>
+                                    <option value="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="invalid-feedback">Example invalid custom select feedback</div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <textarea class="form-control is-invalid" id="validationTextarea"
+                                    placeholder="Required example textarea" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter a message in the textarea.
                                 </div>
                             </div>
-                            <div class="input-container">
-                                <div class="row">
-                                    <span class="req-input">
-                                        <span class="input-status" data-toggle="tooltip" data-placement="top"
-                                            title="Ingrese su nombre completo"> </span>
-                                        <input type="text" data-min-length="8" placeholder="Nombre Completo">
-                                    </span>
-                                </div>
-                                <div class="row">
-                                    <span class="req-input">
-                                        <span class="input-status" data-toggle="tooltip" data-placement="top"
-                                            title="Ingrese su email"> </span>
-                                        <input type="email" placeholder="Email">
-                                    </span>
-                                </div>
-                                <div class="row">
-                                    <span class="req-input">
-                                        <span class="input-status" data-toggle="tooltip" data-placement="top"
-                                            title="Ingrese su telefono"> </span>
-                                        <input type="tel" placeholder="Telefono">
-                                    </span>
-                                </div>
-                                <div class="row">
-                                    <span class="req-input message-box">
-                                        <span class="input-status" data-toggle="tooltip" data-placement="top"
-                                            title="Ingrese su mensaje"> </span>
-                                        <textarea type="textarea" data-min-length="10" placeholder="Mensaje"></textarea>
-                                </div>
-                                <div class="row submit-row">
-                                    <button type="button" class="btn btn-block submit-form">Enviar</button>
-                                </div>
-                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto">Submit</button>
                         </div>
                     </form>
                 </div>
-                
-                    <div class="col-md-6 mapaAbajo">
-                        <iframe width="580" height="392" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=-60.65534323453904%2C-32.94064639862546%2C-60.65234988927842%2C-32.93936106722603&amp;layer=mapnik"
-                            style="border: 1px solid black"></iframe>
-                    </div>
-                
+                <div class="col-md-6 mapaAbajo">
+                    <iframe width="525" height="455" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-60.65534323453904%2C-32.94064639862546%2C-60.65234988927842%2C-32.93936106722603&amp;layer=mapnik"
+                        style="border: 1px solid black"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -373,6 +368,7 @@
             copyright 2019 consultorios Roberto
         </footer>
     </section>
+
     <!--scripts-->
     <!--scripts-->
 

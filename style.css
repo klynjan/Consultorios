@@ -10,3 +10,9 @@ position: absolute;
 z-index: 2;
 width: 100%;	
 }
+
+.navbar-brand#logox {
+    font-family: 'Caveat', cursive;
+font-size: 3rem;
+text-shadow: 2px 3px 1px #000000, 3px 4px 3px rgba(0,0,0,0.5);
+}

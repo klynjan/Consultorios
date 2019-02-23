@@ -16,3 +16,11 @@ width: 100%;
 font-size: 3rem;
 text-shadow: 2px 3px 1px #000000, 3px 4px 3px rgba(0,0,0,0.5);
 }
+
+.modal-open .container-fluid, .modal-open  .container {
+    -webkit-filter: blur(5px) grayscale(80%);
+}
+
+.modal-open .carousel, .modal-open  .carousel {
+    -webkit-filter: blur(5px) grayscale(80%);
+}

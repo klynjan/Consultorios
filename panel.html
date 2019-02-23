@@ -22,7 +22,8 @@
 
     <nav class="navbar navbar-dark fixed-top bg-dark p-1 shadow">
         <div class="container">
-            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0" id="logox" href="index.html">Roberto</a><small class="display-4">coworking</small></span> 
+            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0"
+                href="index.html"><span id="logox">Roberto</span>&nbsp;&nbsp;<small class="display-4 text-muted">coworking</small></a></span>
             <button type="button" class="btn btn-outline-secondary mx-1">Log Off</button>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuColapsable">
                 <span class="navbar-toggler-icon"></span>
@@ -30,23 +31,26 @@
 
             <div class="collapse navbar-collapse" id="menuColapsable">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="index.html">Home&nbsp;&nbsp;<i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#carouselFotos">Fotos&nbsp;&nbsp;<i class="fas fa-camera"></i></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#beneficios">Beneficios&nbsp;&nbsp;<i class="fas fa-plus-square"></i></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#laempresa">La empresa&nbsp;&nbsp;<i class="fas fa-file-contract"></i></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#cards">Tarifas&nbsp;&nbsp;<i class="fas fa-coins"></i></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#contactMap">Contacto&nbsp;&nbsp;<i class="fas fa-hands-helping"></i></a>
+                    </li>
                     <li class="nav-item active ml-auto">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#carouselFotos">Fotos</a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#beneficios">Beneficios</a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#laempresa">La empresa</a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#cards">Tarifas</a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#contactMap">Contacto</a>
+                        <a class="nav-link" href="panel.html">Panel&nbsp;&nbsp;<i class="fas fa-columns"></i></a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +63,9 @@
 
     <!--barra lateral izq 1er parte-->
     <!--el data feather hay que cambiarlo a awesomefont, y usar un tamaño de 16x16 o 24x24 (revisar)-->
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-5">
         <div class="row">
-            <nav class="col-md-2 mt-4 bg-light sidebar">
+            <nav class="col-md-2 mt-5 bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column pt-2">
                         <li class="nav-item">
@@ -158,7 +162,7 @@
                 <!--zona principal tablas1-->
                 <h4 class="my-3">Tickets abiertos</h4>
                 <div class="row">
-                    <div class="col-md-6 border-bottom">
+                    <div class="col-md-6 pb-4 border-bottom">
                         <h5 class="my-2">Tickets publicos</h5>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">
@@ -201,7 +205,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-md-6 border-bottom  ">
+                    <div class="col-md-6 pb-4 border-bottom">
                         <h5 class="my-2">Tickets privados</h5>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">

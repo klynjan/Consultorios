@@ -10,3 +10,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+/* http://ignaciogutierrez.cl/desarrollar-menu-con-efecto-scroll-cambio-de-color/  */
+
+$(window).scroll(function() {
+    if ($("#navegacion").offset().top > 50) {
+        $("#navegacion").addClass("bg-dark");
+    }
+    else {
+        $("#navegacion").removeClass("bg-dark");
+    }
+});

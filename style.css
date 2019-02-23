@@ -13,10 +13,12 @@ div i.iconsMid {
 }
 
 .modal-open .container-fluid, .modal-open .container {
+    filter: blur(4px) grayscale(60%);
     -webkit-filter: blur(4px) grayscale(60%);
 }
 
 .modal-open .carousel, .modal-open .carousel {
+    filter: blur(4px) grayscale(60%);
     -webkit-filter: blur(4px) grayscale(60%);
 }
 

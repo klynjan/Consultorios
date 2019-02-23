@@ -16,14 +16,63 @@
 
 <body>
 
+    <!--modal login-->
+    <!--modal login-->
+
+    <div class="modal fade" id="loginButton" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Ingresa con tu cuenta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="mt-3 mx-4">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1 my-auto">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="col-md-11">
+                                    <input type="text" class="form-control" id="loginUser" placeholder="Usuario">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1 my-auto">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="col-md-11">
+                                    <input type="password" class="form-control" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Log In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--navegacion-->
     <!--navegacion-->
 
     <nav class="navbar navbar-dark" id="navegacion">
         <div class="container">
-            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0"
-                    href="index.html"><span id="logox">Roberto</span>&nbsp;&nbsp;<small class="display-4 text-muted">coworking</small></a></span>
-            <button type="button" class="btn btn-outline-secondary mx-1">Log In</button>
+            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0" href="index.html"><span
+                        id="logox">Roberto</span>&nbsp;&nbsp;<small
+                        class="display-4 text-muted">coworking</small></a></span>
+            <button type="button" class="btn btn-outline-secondary mx-1" data-toggle="modal"
+                data-target="#loginButton">Log In</button>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuColapsable">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,16 +86,19 @@
                         <a class="nav-link" href="#carouselFotos">Fotos&nbsp;&nbsp;<i class="fas fa-camera"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#beneficios">Beneficios&nbsp;&nbsp;<i class="fas fa-plus-square"></i></a>
+                        <a class="nav-link" href="#beneficios">Beneficios&nbsp;&nbsp;<i
+                                class="fas fa-plus-square"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#laempresa">La empresa&nbsp;&nbsp;<i class="fas fa-file-contract"></i></a>
+                        <a class="nav-link" href="#laempresa">La empresa&nbsp;&nbsp;<i
+                                class="fas fa-file-contract"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="nav-link" href="#cards">Tarifas&nbsp;&nbsp;<i class="fas fa-coins"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#contactMap">Contacto&nbsp;&nbsp;<i class="fas fa-hands-helping"></i></a>
+                        <a class="nav-link" href="#contactMap">Contacto&nbsp;&nbsp;<i
+                                class="fas fa-hands-helping"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="nav-link" href="panel.html">Panel&nbsp;&nbsp;<i class="fas fa-columns"></i></a>
@@ -460,7 +512,7 @@
 
     <section class="bg-dark text-white">
         <footer class="container mt-auto py-2 align-middle text-center">
-                copyright 2019 Roberto coworking - dir - tel
+            copyright 2019 Roberto coworking - dir - tel
         </footer>
     </section>
 

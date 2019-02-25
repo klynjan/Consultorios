@@ -25,3 +25,7 @@ div i.iconsMid {
 .bg-dark#navegacion {
     transition: all 2s ease;
 }
+
+.border-3 {
+    border-width:3px;
+}

@@ -11,17 +11,18 @@ function linksNonActiveAll() {
 }
 
 function seccionDnoneAll() {
-    document.getElementById("seccionTickets").classList.add('d-none');
     document.getElementById("seccionTicketsPublicos").classList.add('d-none');
     document.getElementById("seccionTicketsPrivados").classList.add('d-none');
+    document.getElementById("seccionProfesionales").classList.add('d-none');
+    document.getElementById("seccionConsultorios").classList.add('d-none');
     document.getElementById("seccionAlquileres").classList.add('d-none');
+    document.getElementById("seccionDeudas").classList.add('d-none');
 }
 
 function funcionLinkTicketsPublicos() {
     linksNonActiveAll();
     seccionDnoneAll();
     document.getElementById("linkTicketsPublicos").classList.add('active');
-    document.getElementById("seccionTickets").classList.remove('d-none');
     document.getElementById("seccionTicketsPublicos").classList.remove('d-none');
 }
 
@@ -29,7 +30,6 @@ function funcionLinkTicketsPrivados() {
     linksNonActiveAll();
     seccionDnoneAll();
     document.getElementById("linkTicketsPrivados").classList.add('active');
-    document.getElementById("seccionTickets").classList.remove('d-none');
     document.getElementById("seccionTicketsPrivados").classList.remove('d-none');
 }
 
@@ -37,12 +37,14 @@ function funcionLinkProfesionales() {
     linksNonActiveAll();
     seccionDnoneAll();
     document.getElementById("linkProfesionales").classList.add('active');
+    document.getElementById("seccionProfesionales").classList.remove('d-none');
 }
 
 function funcionLinkConsultorios() {
     linksNonActiveAll();
     seccionDnoneAll();
     document.getElementById("linkConsultorios").classList.add('active');
+    document.getElementById("seccionConsultorios").classList.remove('d-none');
 }
 
 function funcionLinkAlquileres() {
@@ -56,4 +58,5 @@ function funcionLinkDeudas() {
     linksNonActiveAll();
     seccionDnoneAll();
     document.getElementById("linkDeudas").classList.add('active');
+    document.getElementById("seccionDeudas").classList.remove('d-none');
 }

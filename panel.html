@@ -22,8 +22,9 @@
 
     <nav class="navbar navbar-dark fixed-top bg-dark p-1 shadow">
         <div class="container">
-            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0"
-                href="index.html"><span id="logox">Roberto</span>&nbsp;&nbsp;<small class="display-4 text-muted">coworking</small></a></span>
+            <span class="mx-auto"><a class="navbar-brand bg-transparent shadow-none py-0" href="index.html"><span
+                        id="logox">Roberto</span>&nbsp;&nbsp;<small
+                        class="display-4 text-muted">coworking</small></a></span>
             <button type="button" class="btn btn-outline-secondary mx-1">Log Off</button>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuColapsable">
                 <span class="navbar-toggler-icon"></span>
@@ -38,16 +39,19 @@
                         <a class="nav-link" href="#carouselFotos">Fotos&nbsp;&nbsp;<i class="fas fa-camera"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#beneficios">Beneficios&nbsp;&nbsp;<i class="fas fa-plus-square"></i></a>
+                        <a class="nav-link" href="#beneficios">Beneficios&nbsp;&nbsp;<i
+                                class="fas fa-plus-square"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#laempresa">La empresa&nbsp;&nbsp;<i class="fas fa-file-contract"></i></a>
+                        <a class="nav-link" href="#laempresa">La empresa&nbsp;&nbsp;<i
+                                class="fas fa-file-contract"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="nav-link" href="#cards">Tarifas&nbsp;&nbsp;<i class="fas fa-coins"></i></a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#contactMap">Contacto&nbsp;&nbsp;<i class="fas fa-hands-helping"></i></a>
+                        <a class="nav-link" href="#contactMap">Contacto&nbsp;&nbsp;<i
+                                class="fas fa-hands-helping"></i></a>
                     </li>
                     <li class="nav-item active ml-auto">
                         <a class="nav-link" href="panel.html">Panel&nbsp;&nbsp;<i class="fas fa-columns"></i></a>
@@ -69,275 +73,254 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column pt-2">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="#" id="linkTicketsPublicos"
+                                onclick="funcionLinkTicketsPublicos()">
                                 <span data-feather="home"></span>
-                                Dashboard <span class="sr-only">(current)</span>
+                                Tickets Publicos
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" id="linkTicketsPrivados"
+                                onclick="funcionLinkTicketsPrivados()">
                                 <span data-feather="file"></span>
-                                Orders
+                                Tickets Privados
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" id="linkProfesionales"
+                            onclick="funcionLinkProfesionales()">
                                 <span data-feather="shopping-cart"></span>
-                                Products
+                                Profesionales
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" id="linkConsultorios"
+                            onclick="funcionLinkConsultorios()">
                                 <span data-feather="users"></span>
-                                Customers
+                                Consultorios
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" id="linkAlquileres"
+                            onclick="funcionLinkAlquileres()">
                                 <span data-feather="bar-chart-2"></span>
-                                Reports
+                                Alquileres
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" id="linkDeudas"
+                            onclick="funcionLinkDeudas()">
                                 <span data-feather="layers"></span>
-                                Integrations
+                                Deudas
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
-            <!--zona principal barra superior-->
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h3>Dashboard</h3>
-                    <div class="btn-toolbar mb-2 mb-md-0">
-                        <div class="btn-group mr-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                        </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar"></span>
-                            This week
-                        </button>
-                    </div>
-                </div>
-
-                <!--zona principal tablas1-->
-                <h4 class="my-3">Tickets abiertos</h4>
-                <div class="row">
-                    <div class="col-md-6 pb-4 border-bottom">
-                        <h5 class="my-2">Tickets publicos</h5>
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>nroTicket</th>
-                                        <th>nombre</th>
-                                        <th>asunto</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>dolor</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>adipiscing</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>21/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>odio</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-6 pb-4 border-bottom">
-                        <h5 class="my-2">Tickets privados</h5>
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>nroTicket</th>
-                                        <th>nombre</th>
-                                        <th>asunto</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>dolor</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>adipiscing</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>21/02/2019</td>
-                                        <td>0101</td>
-                                        <td>asdfasdf</td>
-                                        <td>odio</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!--zona principal tablas-->
-                
-                    <h4 class="my-3">Alquileres venciendo</h4>
-                    <div class="col-md-12 px-0">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha de vencimiento</th>
-                                        <th>IdConsultorio</th>
-                                        <th>IdMedico</th>
-                                        <th>nombreMedico</th>
-                                        <th>EstadoAlquiler</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>dolor</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>20/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>adipiscing</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>21/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>odio</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>21/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>cursus</td>
-                                        <td>impago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>21/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>Sed</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>24/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>sem</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>28/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>imperdiet</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>28/02/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>Praesent</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>04/03/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>tellus</td>
-                                        <td>impago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>10/03/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>porta</td>
-                                        <td>impago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                    <tr>
-                                        <td>20/03/2019</td>
-                                        <td>0101</td>
-                                        <td>0005</td>
-                                        <td>lacinia</td>
-                                        <td>pago</td>
-                                        <td> <button type="button"
-                                                class="btn btn-outline-secondary btn-sm py-0">ver</button>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </main>
         </div>
     </div>
+
+    <!--zona principal barra superior-->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+            <h3>Dashboard</h3>
+        </div>
+
+        <!--zona principal tablas1-->
+        <section id="seccionTickets" class="d-none">
+            <h4 class="my-3">Tickets abiertos</h4>
+            <section id="seccionTicketsPublicos" class="">
+                <h5 class="my-2">Tickets publicos</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>nroTicket</th>
+                                <th>nombre</th>
+                                <th>asunto</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>dolor</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>adipiscing</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>21/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>odio</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="seccionTicketsPrivados" class="">
+                <h5 class="my-2">Tickets privados</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>nroTicket</th>
+                                <th>nombre</th>
+                                <th>asunto</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>dolor</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>adipiscing</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>21/02/2019</td>
+                                <td>0101</td>
+                                <td>asdfasdf</td>
+                                <td>odio</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+        <!--zona principal tablas-->
+        <section id="seccionAlquileres" class="d-none">
+            <h4 class="my-3">Alquileres venciendo</h4>
+            <div class="col-md-12 px-0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>Fecha de vencimiento</th>
+                                <th>IdConsultorio</th>
+                                <th>IdMedico</th>
+                                <th>nombreMedico</th>
+                                <th>EstadoAlquiler</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>dolor</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>20/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>adipiscing</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>21/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>odio</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>21/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>cursus</td>
+                                <td>impago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>21/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>Sed</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>24/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>sem</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>28/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>imperdiet</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>28/02/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>Praesent</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>04/03/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>tellus</td>
+                                <td>impago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>10/03/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>porta</td>
+                                <td>impago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                            <tr>
+                                <td>20/03/2019</td>
+                                <td>0101</td>
+                                <td>0005</td>
+                                <td>lacinia</td>
+                                <td>pago</td>
+                                <td> <button type="button" class="btn btn-outline-secondary btn-sm py-0">ver</button>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!--webfooter-->
     <!--webfooter-->
@@ -361,7 +344,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="scriptsPanel.js"></script>
 </body>
 
 </html>

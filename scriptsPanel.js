@@ -1,70 +1,59 @@
-// d-none en links
-// hecho idxid, si se refactoriza juntar los ids correspondientes
+// d-none en secciones
+// active en links
 
-function funcionLinkTicketsPublicos() {
+function linksNonActiveAll() {
     document.getElementById("linkTicketsPrivados").classList.remove('active');
-    document.getElementById("linkTicketsPublicos").classList.add('active');
+    document.getElementById("linkTicketsPublicos").classList.remove('active');
     document.getElementById("linkProfesionales").classList.remove('active');
     document.getElementById("linkConsultorios").classList.remove('active');
     document.getElementById("linkAlquileres").classList.remove('active');
     document.getElementById("linkDeudas").classList.remove('active');
+}
+
+function seccionDnoneAll() {
+    document.getElementById("seccionTickets").classList.add('d-none');
+    document.getElementById("seccionTicketsPublicos").classList.add('d-none');
+    document.getElementById("seccionTicketsPrivados").classList.add('d-none');
+    document.getElementById("seccionAlquileres").classList.add('d-none');
+}
+
+function funcionLinkTicketsPublicos() {
+    linksNonActiveAll();
+    seccionDnoneAll();
+    document.getElementById("linkTicketsPublicos").classList.add('active');
     document.getElementById("seccionTickets").classList.remove('d-none');
     document.getElementById("seccionTicketsPublicos").classList.remove('d-none');
-    document.getElementById("seccionTicketsPrivados").classList.add('d-none');
 }
 
 function funcionLinkTicketsPrivados() {
+    linksNonActiveAll();
+    seccionDnoneAll();
     document.getElementById("linkTicketsPrivados").classList.add('active');
-    document.getElementById("linkTicketsPublicos").classList.remove('active');
-    document.getElementById("linkProfesionales").classList.remove('active');
-    document.getElementById("linkConsultorios").classList.remove('active');
-    document.getElementById("linkAlquileres").classList.remove('active');
-    document.getElementById("linkDeudas").classList.remove('active');
     document.getElementById("seccionTickets").classList.remove('d-none');
     document.getElementById("seccionTicketsPrivados").classList.remove('d-none');
-    document.getElementById("seccionTicketsPublicos").classList.add('d-none');
 }
 
 function funcionLinkProfesionales() {
-    document.getElementById("linkTicketsPrivados").classList.remove('active');
-    document.getElementById("linkTicketsPublicos").classList.remove('active');
+    linksNonActiveAll();
+    seccionDnoneAll();
     document.getElementById("linkProfesionales").classList.add('active');
-    document.getElementById("linkConsultorios").classList.remove('active');
-    document.getElementById("linkAlquileres").classList.remove('active');
-    document.getElementById("linkDeudas").classList.remove('active');
-    document.getElementById("seccionTickets").classList.remove('d-none');
-    document.getElementById("seccionTicketsPrivados").classList.remove('d-none');
-    document.getElementById("seccionTicketsPublicos").classList.add('d-none');
 }
 
 function funcionLinkConsultorios() {
-    document.getElementById("linkTicketsPrivados").classList.remove('active');
-    document.getElementById("linkTicketsPublicos").classList.remove('active');
-    document.getElementById("linkProfesionales").classList.remove('active');
+    linksNonActiveAll();
+    seccionDnoneAll();
     document.getElementById("linkConsultorios").classList.add('active');
-    document.getElementById("linkAlquileres").classList.remove('active');
-    document.getElementById("linkDeudas").classList.remove('active');
-    document.getElementById("seccionTickets").classList.remove('d-none');
-    document.getElementById("seccionTicketsPrivados").classList.remove('d-none');
-    document.getElementById("seccionTicketsPublicos").classList.add('d-none');
 }
 
 function funcionLinkAlquileres() {
-    document.getElementById("linkTicketsPrivados").classList.remove('active');
-    document.getElementById("linkTicketsPublicos").classList.remove('active');
-    document.getElementById("linkProfesionales").classList.remove('active');
-    document.getElementById("linkConsultorios").classList.remove('active');
+    linksNonActiveAll();
+    seccionDnoneAll();
     document.getElementById("linkAlquileres").classList.add('active');
-    document.getElementById("linkDeudas").classList.remove('active');
-    document.getElementById("seccionTickets").classList.add('d-none');
     document.getElementById("seccionAlquileres").classList.remove('d-none');
 }
 
 function funcionLinkDeudas() {
-    document.getElementById("linkTicketsPrivados").classList.remove('active');
-    document.getElementById("linkTicketsPublicos").classList.remove('active');
-    document.getElementById("linkProfesionales").classList.remove('active');
-    document.getElementById("linkConsultorios").classList.remove('active');
-    document.getElementById("linkAlquileres").classList.remove('active');
+    linksNonActiveAll();
+    seccionDnoneAll();
     document.getElementById("linkDeudas").classList.add('active');
 }

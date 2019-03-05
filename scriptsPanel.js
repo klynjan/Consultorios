@@ -1,5 +1,6 @@
 // d-none en secciones
 // active en links
+// confirmar si se puede refactorizar
 
 function linksNonActiveAll() {
     document.getElementById("linkTicketsPrivados").classList.remove('active');
@@ -59,4 +60,31 @@ function funcionLinkDeudas() {
     seccionDnoneAll();
     document.getElementById("linkDeudas").classList.add('active');
     document.getElementById("seccionDeudas").classList.remove('d-none');
+}
+
+//navtabs
+
+function funcionNavTabsAndPaneNonActive() {
+    document.getElementById("navTab1").classList.remove('active');
+    document.getElementById("navTab2").classList.remove('active');
+    document.getElementById("navTab3").classList.remove('active');
+    document.getElementById("infoDelProfesional").classList.remove('active');
+    document.getElementById("historialAlquileresProfesional").classList.remove('active');
+    document.getElementById("historialTicketsProfesional").classList.remove('active'); 
+}
+
+function funcionNavTab1(){
+    funcionNavTabsAndPaneNonActive();
+    document.getElementById("navTab1").classList.add('active');
+    document.getElementById("infoDelProfesional").classList.add('active');
+}
+function funcionNavTab2(){
+    funcionNavTabsAndPaneNonActive();
+    document.getElementById("navTab2").classList.add('active');
+    document.getElementById("historialAlquileresProfesional").classList.add('active');
+}
+function funcionNavTab3(){
+    funcionNavTabsAndPaneNonActive();
+    document.getElementById("navTab3").classList.add('active');
+    document.getElementById("historialTicketsProfesional").classList.add('active'); 
 }
